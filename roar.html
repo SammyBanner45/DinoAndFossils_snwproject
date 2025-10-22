@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosaurs and Fossils</title>
     <link rel="stylesheet" href="jurassic.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap">
 </head>
 <body>
     <header class="navbar">
     <div class="logo">
-      <h1>Dinos & Fossils</h1>
+      <h1 style="font-family: Asimovian; font-size: 50px;";>Dinos & Fossils</h1>
       <p>Unearthing Ancient Worlds</p>
     </div>
     <nav>
@@ -29,7 +30,8 @@
     <div class="hero-content">
       <h2>Welcome to the Prehistoric Journey</h2>
       <p>Explore the magnificent creatures that once roamed our planet...</p>
-      <button class="btn-primary">Start Exploring Now</button>
+      <a href="#paleology">
+        <button class="btn-primary">Start Exploring Now</button></a>
     </div>
   </section> 
 
@@ -47,11 +49,12 @@
       <button class="btn-secondary">Explore Fossils</button>
       <button class="btn-secondary">Explore sites</button>
       <button class="btn-secondary">More paleological finds</button>
-    </div></section>
+    </div>
+    <div id="paleology" style="background-color: #2b2b2b; height: 4px; margin-top: 40px;"></div>
 
-
+  </section>
     <section class="section paleology">
-    <h3>Paleology: The Science to the Past</h3>
+      <h2>Paleology: The Science to the Past</h2> 
     <div class="interactive">
       <div class="contact-form">
         <input type="text" placeholder="Name" />
@@ -59,7 +62,39 @@
         <input type="text" placeholder="Association" />
         <input type="text" placeholder="Fieldsite" />
         <textarea placeholder="Message"></textarea>
-        <button class="btn-green">Send Message</button>
+        <button class="btn-green">Send Message</button><br>
+    <table class="geologic-table">
+    <caption style="color: khaki; font-weight: bold;"> The eras of the Colossals:</caption>
+  <thead >
+    <tr>
+      <th>Era</th>
+      <th>Period</th>
+      <th>Time Span (Million Years Ago)</th>
+      <th>Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mesozoic</td>
+      <td>Triassic</td>
+      <td>252 - 201</td>
+      <td>First dinosaurs and mammals appeared; dry climate with deserts.</td>
+    </tr>
+    <tr>
+      <td>Mesozoic</td>
+      <td>Jurassic</td>
+      <td>201 - 145</td>
+      <td>Age of giant sauropods; lush vegetation; first birds evolved.</td>
+    </tr>
+    <tr>
+      <td>Mesozoic</td>
+      <td>Cretaceous</td>
+      <td>145 - 66</td>
+      <td>Flowering plants appeared; T. rex and Triceratops roamed; ended with mass extinction.</td>
+    </tr>
+    
+  </tbody>
+</table>
       </div>
 
       <div class="exploration">
@@ -71,46 +106,52 @@
 
         <div class="featured">
           <div class="feature-card">
-            <img src="https://media.istockphoto.com/id/1390038554/photo/tyrannosaurus-from-the-cretaceous-era-3d-illustration.jpg?s=612x612&w=0&k=20&c=XHmc7HuHRnwwF2I3D_eV69n_GEz6lof_FtpHQ4w_Ixk=" alt="Tyrannosaurus">
+            <img src="https://shop.minimuseum.com/cdn/shop/articles/t_rex_crown_1200x.jpg?v=1677268774" alt="Tyrannosaurus" height="200";>
             <h4>Tyrannosaurus Rex</h4>
-            <p>The most ferocious land predator of all time.</p>
-            <button class="btn-learn">Learn More</button>
+            <p>Tyrannosaurus Rex was one of the largest and most powerful carnivorous dinosaurs to ever walk the Earth.</p>
+            <a href="https://en.wikipedia.org/wiki/Tyrannosaurus" target="_blank">
+            <button class="btn-learn">Learn More</button></a>
           </div>
         
         <div class="feature-card">
             <img src="https://images.cults3d.com/ojARZkTnhwmGN-BKswv4DPDfOwU=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/20390217/illustration-file/f83acff1-9510-4d16-93e5-25933049d212/23994084-5560-4437-8c68-0a33d041ce9e.jpg" alt="Velociraptor">
             <h4>Velociraptor</h4>
-            <p>A swift, intelligent hunter from the late Cretaceous period.</p>
-            <button class="btn-learn">Learn More</button>
+            <p>A swift, intelligent hunter from the late Cretaceous period. They used to hunt in packs with excellent coordination.</p>
+            <a href="https://en.wikipedia.org/wiki/Velociraptor" target="_blank">
+            <button class="btn-learn">Learn More</button></a>          
           </div>
         
           <div class="feature-card">
             <img src="https://dinosaurland.es/wp-content/uploads/elementor/thumbs/dinosaurio-stegosaurus-dinosaurland-r1n5jvppvyq7ahgc8fksp9wkzqen5sq9cnu2l3cav4.jpg" alt="Stegosaurus">
             <h4>Stegosaurus</h4>
-            <p>Known for its spiked tail and plated back armor.</p>
-            <button class="btn-learn">Learn More</button>
+            <p>A herbivorous dinosaur easily recognized by the large, bony plates running along its back and used its spiked tail for defense. </p>
+             <a href="https://en.wikipedia.org/wiki/Stegosaurus" target="_blank">
+            <button class="btn-learn">Learn More</button></a>          
           </div>
 
           <div class="feature-card">
             <img src="https://i.natgeofe.com/n/b96b572c-98e2-4ec2-a714-08a6b95cf646/triceratopshorridus_hexdcb_square.jpg?wp=1&w=357&h=357" alt="Triceratops">
             <h4>Triceratops</h4>
-            <p>A herbivorous dinosaur recognized by its three horns and large bony frill.</p>
-            <button class="btn-learn">Learn More</button>
+            <p>A herbivorous dinosaur recognized by its three horns and large bony frill, fed on tough vegetation with its beak-like mouth.</p>
+            <a href="https://en.wikipedia.org/wiki/Triceratops" target="_blank">
+            <button class="btn-learn">Learn More</button></a>
         </div>
 
         <div class="feature-card">
-            <img src="https://preview.redd.it/why-we-dont-have-brachiosaurus-on-dinosaur-king-v0-eh0r94ak87kc1.jpeg?width=640&crop=smart&auto=webp&s=0012ec23b69441358b1d6dab715e3cd5ba8197a5" alt="Brachiosaurus">
+            <img src="https://preview.redd.it/why-we-dont-have-brachiosaurus-on-dinosaur-king-v0-eh0r94ak87kc1.jpeg?width=640&crop=smart&auto=webp&s=0012ec23b69441358b1d6dab715e3cd5ba8197a5" alt="Brachiosaurus" height="200"; >
             <h4>Brachiosaurus</h4>
-            <p>A gentle giant known for its long neck and towering height, reaching treetops for food.</p>
-            <button class="btn-learn">Learn More</button>
-        </div>
+            <p>A gentle giant with long neck and towering height, reaching treetops for food. Its front legs were longer than its hind legs.</p>
+            <a href="https://en.wikipedia.org/wiki/Brachiosaurus" target="_blank">
+            <button class="btn-learn">Learn More</button></a>        
+          </div>
 
          <div class="feature-card">
-            <img src="https://www.simpsonstreetfreepress.org/images/Ankylosaurus.jpeg" alt="Ankylosaurus">
+            <img src="https://dinosaurland.es/wp-content/uploads/2024/01/dinosaurio-ankylosaurio.jpg" alt="Ankylosaurus"; height="200">
             <h4>Ankylosaurus</h4>
-            <p>A heavily armored dinosaur with a massive tail club used for defense.</p>
-            <button class="btn-learn">Learn More</button>
-        </div>
+            <p>A heavily armored dinosaur with a massive tail club used for defense. It was a gentle plant-eater that thrived in Cretaceous era.</p>
+            <a href="https://en.wikipedia.org/wiki/Ankylosaurus" target="_blank">
+            <button class="btn-learn">Learn More</button></a>        
+          </div>
 
         </div>
       </div>

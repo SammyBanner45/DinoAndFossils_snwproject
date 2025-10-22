@@ -3,6 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
   color: #f5f5f5;
+  scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
   margin: 0;
@@ -20,6 +21,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
+  opacity: 98%;
 }
 .logo h1 {
   color: #d5e5b2;
@@ -32,13 +34,13 @@ a {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 .navbar a {
   color: #f5f5f5;
   padding: 8px 12px;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: background 0.5s;
 }
 .navbar a.active,
 .navbar a:hover {
@@ -50,6 +52,7 @@ a {
   padding: 300px 20px;
   color: #fff;
   position: relative;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .hero::after {
   content: "";
@@ -145,6 +148,9 @@ a {
   border-radius: 6px;
   cursor: pointer;
 }
+.btn-green:hover{
+  background-color: #1e3d1e;
+}
 .exploration {
   flex: 2;
 }
@@ -157,6 +163,11 @@ a {
 .tab.active {
   background-color: #f5a623;
   color: white;
+}
+.tabs :hover{
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
 }
 
 .featured {
@@ -189,4 +200,38 @@ footer {
   background-color: black;
   color: khaki;
   font-size: 1em;
+}
+caption{
+  font-size:large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.geologic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  overflow: hidden;
+  z-index: 5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.geologic-table th, .geologic-table td {
+  border: 2px solid white;
+  padding: 12px 5px;
+  text-align: left;
+}
+
+.geologic-table th {
+    background-color: #2b502b;
+    text-align: center;
+}
+
+.geologic-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.geologic-table tr:hover {
+  background-color: #3a3a3a;
 }
