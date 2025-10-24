@@ -86,7 +86,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 30px;
   margin: 30px 0;
 }
 .card {
@@ -96,6 +96,7 @@ a {
   text-align: center;
   width: 150px;
   transition: transform 0.3s;
+  font-size: 20px;
 }
 .card:hover {
   transform: translateY(-7px);
@@ -110,13 +111,14 @@ a {
   text-align: center;
 }
 .btn-secondary {
-  background-color: #2b502b;
-  color: khaki;
-  padding: 10px 18px;
-  margin: 5px;
+  background-color: #2b2b2b;
+  color: silver;
+  padding: 10px 20px;
+  margin: 5px 20px;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
 }
 .interactive {
   display: flex;
@@ -130,7 +132,7 @@ a {
   flex-direction: column;
   gap: 10px;
   flex: 1;
-  min-width: 250px;
+  width: 250px;
 }
 .contact-form input,
 .contact-form textarea {
@@ -144,7 +146,7 @@ a {
   background-color: #3ea63e;
   border: none;
   padding: 10px;
-  color: white;
+  color: #f8f9f6;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -159,21 +161,28 @@ a {
   gap: 10px;
   margin-bottom: 20px;
 }
-
-.tab.active {
-  background-color: #f5a623;
-  color: white;
-}
-.tabs :hover{
-  background-color: yellow;
+.tab {
+  background-color:#d5e5b2;
   color: black;
+  border: none;
+  border-radius: 5px;
+}
+.tab:hover{
+  background-color: #f5a623;
+  
   cursor: pointer;
 }
-
+.tab-active {
+  background-color: #f5a623;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .featured {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 .feature-card {
   background-color: #2b2b2b;
@@ -194,6 +203,10 @@ a {
   border-radius: 6px;
   cursor: pointer;
 }
+ .btn-learn:hover{
+    background-color: #2b502b;
+ } 
+
 footer {
   text-align: center;
   padding: 1px;
@@ -204,9 +217,16 @@ footer {
 caption{
   font-size:large;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: khaki;
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: left;
 }
 .geologic-table {
   width: 100%;
+  height: 500px;
   border-collapse: collapse;
   margin-top: 30px;
   background-color: #1e1e1e;
@@ -234,4 +254,19 @@ caption{
 
 .geologic-table tr:hover {
   background-color: #3a3a3a;
+}
+#more-dino{
+  margin-top: 10px;
+  width: 150px;
+  background-color: #3e6b3e;
+  color: khaki;
+  font-weight: 300;
+  font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+#more-dino:hover{
+  background-color: #2b502b;
 }
