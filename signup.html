@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+        <link rel="stylesheet" href="jurassic.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap">
+
+        <style>
+          .formin{
+            position: relative;
+          }
+            form{
+                margin: 30px 25% 30px 35%;
+                position: relative;
+            }
+            label{
+                margin-bottom: 100px;
+            }
+             input{
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                background: #1f1f1f;
+                color: #fff;
+                width: 90%;
+                }
+
+            .btn-g{
+            background-color: #3ea63e;
+            border: none;
+            padding: 10px;
+            color: #f8f9f6;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px 0px;
+            position: absolute;
+            left: 4.5%;
+            width: 55%
+            }
+            .btn-g:hover{
+            background-color: #1e3d1e;
+            }
+            fieldset{
+                width: 59%;
+            }
+            #log{
+                position: absolute;
+                top: 110%;
+                left: 35%;
+            }
+            legend{
+                color: khaki;
+            }
+        </style>
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">
+      <h1 style="font-family: Asimovian; font-size: 50px;";>Dinos & Fossils</h1>
+      <p>Unearthing Ancient Worlds</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="roar.html" >Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://www.google.com/search?q=dinosaurs+shop&sca_esv=92debb9001157326&sxsrf=AE3TifM_k7Q8inneLTwzcfDk11RE05jlOA%3A1761675851193&ei=SwoBaaXGC7iIosUPgqT-2A8&ved=0ahUKEwjll8f6wceQAxU4hKgCHQKSH_sQ4dUDCBE&uact=5&oq=dinosaurs+shop&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmRpbm9zYXVycyBzaG9wMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkioJlCoA1jKHHABeAGQAQCYAYgBoAGPBaoBAzAuNbgBA8gBAPgBAZgCBqACwgXCAg0QIxjwBRiwAxgnGMkCwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQHCAgoQIxjwBRgnGMkCwgINEAAYgAQYsQMYQxiKBcICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgINEC4YgAQYsQMYQxiKBcICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBhO6BgYIARABGAmSBwMxLjWgB78rsgcDMC41uAe0BcIHBTItNS4xyAcl&sclient=gws-wiz-serp&zx=1761676406282&no_sw_cr=1" target="_blank">Shop</a></li>
+        <li><a href="https://vertpaleo.org/contact-us/">Contact</a></li>
+        <li><a href="https://www.google.com/search?q=dinosaurs&sca_esv=3d3f4dbf6750febd&biw=1512&bih=827&tbm=nws&sxsrf=AE3TifNnLoh-sapp9zLRaeLFviNlB_oD1w%3A1761682064099&ei=kCIBac7rBcmc4-EP-cDJoQ8&ved=0ahUKEwjO84yN2ceQAxVJzjgGHXlgMvQQ4dUDCA4&uact=5&oq=dinosaurs&gs_lp=Egxnd3Mtd2l6LW5ld3MiCWRpbm9zYXVyczINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYkQIYigUyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yChAAGIAEGEMYigUyCxAAGIAEGJECGIoFSM0JUABYAHAAeACQAQCYAY0BoAGNAaoBAzAuMbgBA8gBAPgBAZgCAaAClgGYAwCSBwMwLjGgB8cFsgcDMC4xuAeWAcIHAzItMcgHBQ&sclient=gws-wiz-news">News</a></li>
+        <li><a href="signup.html" class="active">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="formin">
+    <form method="post">
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" minlength="6" required /><br /><br />
+
+        <label for="confirm-password">Confirm Password:</label><br />
+        <input type="password" id="confirm-password" name="confirm-password" minlength="6" required /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label><br />
+        <input type="text" id="fullname" name="fullname" /><br /><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" name="age" min="0" /><br /><br />
+
+        <label for="country">Country:</label><br />
+        <input type="text" id="country" name="country" /><br /><br />
+      </fieldset>
+
+      <button type="submit" class="btn-g">Create Account</button>
+    </form>
+      <p id="log">Already have an account? <a href="#login.html" style="color: aqua;">Log in here</a>.</p></div>
+<div>
+      <footer style="margin-top: 150px;">
+    <p>© 2025 HTML CSS Project. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
