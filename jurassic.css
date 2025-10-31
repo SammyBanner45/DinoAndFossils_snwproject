@@ -22,6 +22,8 @@ a {
   top: 0;
   z-index: 100;
   opacity: 98%;
+  width: auto;
+  flex-wrap: wrap;
 }
 .logo h1 {
   color: #d5e5b2;
