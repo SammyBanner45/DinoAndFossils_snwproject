@@ -87,7 +87,7 @@ a {
 .dino-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   row-gap: 40px;
   column-gap: 150px;
   margin: 30px 0;
@@ -160,6 +160,9 @@ a {
 .exploration {
   flex: 2;
 }
+#tabs{
+  scroll-margin-top: 300px;
+}
 .tabs {
   display: flex;
   gap: 10px;
@@ -207,6 +210,8 @@ a {
   padding: 8px 15px;
   border-radius: 6px;
   cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
  .btn-learn:hover{
     background-color: #2b502b;
