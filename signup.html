@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
         <link rel="stylesheet" href="jurassic.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap">
+ <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Special+Elite&display=swap" rel="stylesheet">    
 
         <style>
-          .formin{
-            position: relative;
+          *{
+            
+            box-sizing: border-box;
+            overflow-x: hidden;
           }
+          .navbar {
+            position: sticky;
+            top: 0px;
+           width: 100%;
+          padding: 10px 20px;
+          }
+          
             form{
-                margin: 30px 25% 30px 35%;
-                position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              min-width: 300px;
+              margin: 100px auto;  
+              position: relative;
+              padding-left: 30px;
             }
             label{
                 margin-bottom: 100px;
@@ -34,46 +52,67 @@
             color: #f8f9f6;
             border-radius: 6px;
             cursor: pointer;
-            margin: 10px 0px;
-            position: absolute;
-            left: 4.5%;
-            width: 55%
+            margin-top: 10px;
+            width: 75%;
+            text-align: center;
+            position: relative;
+            left: 3%;
             }
             .btn-g:hover{
             background-color: #1e3d1e;
             }
             fieldset{
-                width: 59%;
+                width: 80%;
             }
-            #log{
-                position: absolute;
-                top: 110%;
-                left: 35%;
+            #log {
+              margin-top: 10px;
+              position: relative;
+              left: 0;
+              color: #fff;
             }
             legend{
                 color: khaki;
             }
+            @media (min-width: 900px) {
+  
+  .signup{  max-width: 800px; margin: 10px auto; position: relative; max-height: 80%;} 
+  .signup label{ margin-bottom: 100px; } 
+  .signup input{ padding: 10px; border: none; border-radius: 6px; background: #1f1f1f; color: #fff; width: 90%; } 
+  .btn-g{ 
+    background-color: #3ea63e;
+    border: none;
+    padding: 12px;
+    color: #f8f9f6;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 50%;
+    transition: background-color 0.3s ease;}
+  .signup fieldset{ width: 59%; } 
+  #log{ position: absolute; top: 100%; left: 2%; padding: auto;} 
+  .signup legend{ color: khaki; }
+}
+
         </style>
 </head>
 <body>
     <header class="navbar">
     <div class="logo">
-      <h1 style="font-family: Asimovian; font-size: 50px;";>Dinos & Fossils</h1>
+      <h1 style="font-family: Metal Mania, system-ui; font-size: 50px;";>Dinos <span style="font-family: Special Elite;">&</span> Fossils</h1>
       <p>Unearthing Ancient Worlds</p>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://www.google.com/search?q=dinosaurs+shop&sca_esv=92debb9001157326&sxsrf=AE3TifM_k7Q8inneLTwzcfDk11RE05jlOA%3A1761675851193&ei=SwoBaaXGC7iIosUPgqT-2A8&ved=0ahUKEwjll8f6wceQAxU4hKgCHQKSH_sQ4dUDCBE&uact=5&oq=dinosaurs+shop&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmRpbm9zYXVycyBzaG9wMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkioJlCoA1jKHHABeAGQAQCYAYgBoAGPBaoBAzAuNbgBA8gBAPgBAZgCBqACwgXCAg0QIxjwBRiwAxgnGMkCwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQHCAgoQIxjwBRgnGMkCwgINEAAYgAQYsQMYQxiKBcICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgINEC4YgAQYsQMYQxiKBcICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBhO6BgYIARABGAmSBwMxLjWgB78rsgcDMC41uAe0BcIHBTItNS4xyAcl&sclient=gws-wiz-serp&zx=1761676406282&no_sw_cr=1">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://www.google.com/search?q=dinosaurs&sca_esv=3d3f4dbf6750febd&biw=1512&bih=827&tbm=nws&sxsrf=AE3TifNnLoh-sapp9zLRaeLFviNlB_oD1w%3A1761682064099&ei=kCIBac7rBcmc4-EP-cDJoQ8&ved=0ahUKEwjO84yN2ceQAxVJzjgGHXlgMvQQ4dUDCA4&uact=5&oq=dinosaurs&gs_lp=Egxnd3Mtd2l6LW5ld3MiCWRpbm9zYXVyczINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYkQIYigUyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yChAAGIAEGEMYigUyCxAAGIAEGJECGIoFSM0JUABYAHAAeACQAQCYAY0BoAGNAaoBAzAuMbgBA8gBAPgBAZgCAaAClgGYAwCSBwMwLjGgB8cFsgcDMC4xuAeWAcIHAzItMcgHBQ&sclient=gws-wiz-news">News</a></li>
-        <li><a href="signup.html" class="active">Sign Up</a></li>
+        <li><a href="index.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+         <li><a href="https://www.google.com/search?q=dinosaurs+shop&sca_esv=92debb9001157326&sxsrf=AE3TifM_k7Q8inneLTwzcfDk11RE05jlOA%3A1761675851193&ei=SwoBaaXGC7iIosUPgqT-2A8&ved=0ahUKEwjll8f6wceQAxU4hKgCHQKSH_sQ4dUDCBE&uact=5&oq=dinosaurs+shop&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmRpbm9zYXVycyBzaG9wMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkioJlCoA1jKHHABeAGQAQCYAYgBoAGPBaoBAzAuNbgBA8gBAPgBAZgCBqACwgXCAg0QIxjwBRiwAxgnGMkCwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQHCAgoQIxjwBRgnGMkCwgINEAAYgAQYsQMYQxiKBcICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgINEC4YgAQYsQMYQxiKBcICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBhO6BgYIARABGAmSBwMxLjWgB78rsgcDMC41uAe0BcIHBTItNS4xyAcl&sclient=gws-wiz-serp&zx=1761676406282&no_sw_cr=1" target="_blank"><i class="fa-solid fa-bag-shopping"></i> Shop</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact </a></li>
+        <li><a href="https://www.google.com/search?q=dinosaurs&sca_esv=3d3f4dbf6750febd&biw=1512&bih=827&tbm=nws&sxsrf=AE3TifNnLoh-sapp9zLRaeLFviNlB_oD1w%3A1761682064099&ei=kCIBac7rBcmc4-EP-cDJoQ8&ved=0ahUKEwjO84yN2ceQAxVJzjgGHXlgMvQQ4dUDCA4&uact=5&oq=dinosaurs&gs_lp=Egxnd3Mtd2l6LW5ld3MiCWRpbm9zYXVyczINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYkQIYigUyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yChAAGIAEGEMYigUyCxAAGIAEGJECGIoFSM0JUABYAHAAeACQAQCYAY0BoAGNAaoBAzAuMbgBA8gBAPgBAZgCAaAClgGYAwCSBwMwLjGgB8cFsgcDMC4xuAeWAcIHAzItMcgHBQ&sclient=gws-wiz-news" target="_blank"><i class="fa-solid fa-newspaper"></i> News</a></li>
+        <li><a href="signup.html" class="active"><i class="fa-regular fa-user"></i></a></li>
       </ul>
     </nav>
   </header>
   <div class="formin">
-    <form method="post">
+    <form method="post" class="signup">
       <fieldset>
         <legend>Account Information</legend>
 
@@ -104,10 +143,10 @@
       </fieldset>
 
       <button type="submit" class="btn-g">Create Account</button>
-    </form>
       <p id="log">Already have an account? <a href="#login.html" style="color: aqua;">Log in here</a>.</p></div>
+    </form>
 <div>
-      <footer style="margin-top: 150px;">
+      <footer style="margin-top: 0px;">
     <p>© 2025 HTML CSS Project. All rights reserved.</p>
   </footer>
 </div>
